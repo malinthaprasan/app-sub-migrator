@@ -7,6 +7,7 @@ public class Subscription {
     private Application application;
     private String subscriptionStatus;
     private String subscriptionCreatedStatus;
+    private String createdBy;
 
     public void setApiIdentifier(APIIdentifier apiIdentifier) {
         this.apiIdentifier = apiIdentifier;
@@ -30,6 +31,10 @@ public class Subscription {
 
     public void setTierId(String tierId) {
         this.tierId = tierId;
+    }
+
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
     }
 
     public APIIdentifier getApiIdentifier() {
@@ -56,6 +61,10 @@ public class Subscription {
         return tierId;
     }
 
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
     @Override
     public String toString() {
         return "Subscription {\n" +
@@ -65,6 +74,7 @@ public class Subscription {
                 "    application: " + toIndentedString(application) + "\n" +
                 "    subscriptionStatus: " + toIndentedString(subscriptionStatus) + "\n" +
                 "    subscriptionCreatedStatus: " + toIndentedString(subscriptionCreatedStatus) + "\n" +
+                "    createdBy: " + toIndentedString(createdBy) + "\n" +
                 "}";
     }
 

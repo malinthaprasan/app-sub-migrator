@@ -1,4 +1,4 @@
-package org.wso2.apim.sample.app.sub.migrator;
+package org.wso2.apim.sample.app.sub.migrator.dao;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
